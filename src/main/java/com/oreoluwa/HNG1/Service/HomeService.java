@@ -15,6 +15,8 @@ import java.util.Locale;
 
 @Service
 public class HomeService {
+    private final String file_url = "https://github.com/oresho/hng/blob/stage1/src/main/java/com/oreoluwa/HNG1/Controller/HomeController.java";
+    private final String repo_url = "https://github.com/oresho/hng";
     public ResponseModel process(String slack_name, String track){
         Locale locale = new Locale("English");
         LocalDate date = LocalDate.now();
@@ -27,8 +29,8 @@ public class HomeService {
                 .current_day(today.getDisplayName(TextStyle.FULL_STANDALONE,locale))
                 .utc_time(formattedTimestamp)
                 .track(track)
-                .github_file_url("https://github.com/oresho/repo/")
-                .github_repo_url("https://github.com/username/repo/")
+                .github_file_url(file_url)
+                .github_repo_url(repo_url)
                 .status_code(HttpStatus.OK.value())
                 .build();
         return responseModel;
