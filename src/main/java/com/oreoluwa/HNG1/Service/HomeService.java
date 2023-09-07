@@ -15,7 +15,7 @@ import java.util.Locale;
 
 @Service
 public class HomeService {
-    private final String file_url = "https://github.com/oresho/hng/blob/stage1/src/main/java/com/oreoluwa/HNG1/Controller/HomeController.java";
+    private final String file_url = "https://github.com/oresho/hng/blob/stage1/src";
     private final String repo_url = "https://github.com/oresho/hng";
     public ResponseModel process(String slack_name, String track){
         ResponseModel responseModel = ResponseModel.builder()
@@ -33,7 +33,8 @@ public class HomeService {
     public String getDay(){
         LocalDate date = LocalDate.now();
         DayOfWeek today = date.getDayOfWeek();
-        return today.toString();
+        String dayName = today.getDisplayName(TextStyle.FULL,Locale.getDefault());
+        return dayName;
     }
 
     public String getTimeUTC(){
