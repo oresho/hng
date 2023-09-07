@@ -17,7 +17,7 @@ import java.time.format.TextStyle;
 import java.util.Locale;
 
 @RestController
-@RequestMapping("/api/v1/")
+@RequestMapping("/api")
 @RequiredArgsConstructor
 public class HomeController {
     private final HomeService homeService;
