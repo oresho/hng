@@ -15,7 +15,7 @@ import java.util.Locale;
 
 @Service
 public class HomeService {
-    private final String file_url = "https://github.com/oresho/hng/blob/stage1/src";
+    private final String file_url = "https://github.com/oresho/hng/blob/stage1/target/HNG1-0.0.1-SNAPSHOT.jar";
     private final String repo_url = "https://github.com/oresho/hng";
     public ResponseModel process(String slack_name, String track){
         ResponseModel responseModel = ResponseModel.builder()
