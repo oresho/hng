@@ -53,17 +53,92 @@ First, get a copy of this repo on your local machine by using the git clone comm
 
   3. You can also configure other application-specific settings in the same file.
  
-## Usage
+## Usage & Testing
 A Postman Document was included to show the various permissible requests.
 
 ### Endpoints
-  ```
-  `GET /api/{id}: Retrieve details of a person by ID. [] TODO: add sample request
-  `POST /api: Create a new person. []
-  `PUT /api/{id}: Update details of an existing person. []
-  `DELETE /api/{id}: Remove a person.[]
+1. CREATE Endpoint
+Create new Person
+    Request:
+      HTTP Method: POST
+      Endpoint: /api
+      Request Body:
+       {
+        "name": "John Doe",
+        "age": 30
+        "email": "oresho@yahoo.com"
+      }
+    Response:
+      HTTP Status Code: 201 Created
+      Response Body:
+       {
+        "id": 1,
+        "name": "John Doe",
+        "age": 30
+        "email": "oresho@yahoo.com"
+      }
+   
+2. READ Endpoint
+Get Person details by ID
+    Request:
+      HTTP Method: GET
+      Endpoint: /api/{id}
+    Response:
+      HTTP Status Code: 200 OK
+      Response Body:
+       {
+        "id": 1,
+        "name": "John Doe",
+        "age": 30
+        "email": "oresho@yahoo.com"
+      }
 
-## UML
-![Screenshot 2023-09-10 at 19 24 51](https://github.com/oresho/hng/assets/92453774/cff1d4f5-d43a-44e9-941d-c60ff2bc4327)
+3. UPDATE Endpoint
+Update Person details by ID
+    Request:
+      HTTP Method: PUT
+      Endpoint: /api/{id}
+      Request Body:
+       {
+        "name": "Updated Name",
+        "age": 35
+        "email": "updatedemail@yahoo.com"
+       }
+    Response:
+      HTTP Status Code: 200 OK
+      Response Body:
+       {
+        "id": 1,
+        "name": "Updated Name",
+        "age": 35
+        "email": "updatedemail@yahoo.com"
+      }
+   
+5. DELETE Endpoint
+Delete a Person by ID
+  Request:
+    HTTP Method: DELETE
+    Endpoint: /api/{id}
+  Response:
+  HTTP Status Code: 204 No Content
+
+
+## Deployment
+ This application was deployed on render, follow these steps to deploy:
+ 1. Package your application in a jar file using
+    ```bash
+    mvn clean package
+ 2. Test the package by using the command:
+    ```bash
+    java -jar your-application.jar
+ 3. Add a docker file with the following commands:
+    ```bash
+      FROM eclipse-temurin:17-jdk-alpine
+      VOLUME /tmp
+      COPY target/*.jar app.jar
+      ENTRYPOINT ["java","-jar","/app.jar"]
+      EXPOSE 8080
+
+
 
 
