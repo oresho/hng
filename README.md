@@ -7,7 +7,7 @@ This is the source code pertaining to my submission of the stage 2 task for the 
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Configuration](#configuration)
-- [Usage & Testing](#usage-&-testing)
+- [Usage & Testing](#usage--testing)
   - [Endpoints](#endpoints)
 - [Deployment](#deployment)
 
@@ -56,6 +56,7 @@ First, get a copy of this repo on your local machine by using the git clone comm
 A Postman Document was included to show the various permissible requests.
 
 ### Endpoints
+```bash
 1. CREATE Endpoint
 Create new Person
     Request:
@@ -77,7 +78,7 @@ Create new Person
         "email": "oresho@yahoo.com"
       }
    
-2. READ Endpoint
+3. READ Endpoint
 Get Person details by ID
     Request:
       HTTP Method: GET
@@ -92,7 +93,7 @@ Get Person details by ID
         "email": "oresho@yahoo.com"
       }
 
-3. UPDATE Endpoint
+4. UPDATE Endpoint
 Update Person details by ID
     Request:
       HTTP Method: PUT
