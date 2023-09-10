@@ -7,9 +7,8 @@ This is the source code pertaining to my submission of the stage 2 task for the 
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Configuration](#configuration)
-- [Usage](#usage)
+- [Usage & Testing](#usage-&-testing)
   - [Endpoints](#endpoints)
-- [Testing](#testing)
 - [Deployment](#deployment)
 
 ## Prerequisites
