@@ -7,9 +7,10 @@ This is the source code pertaining to my submission of the stage 2 task for the 
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Configuration](#configuration)
+- [Deployment](#deployment)
 - [Usage & Testing](#usage--testing)
   - [Endpoints](#endpoints)
-- [Deployment](#deployment)
+
 
 ## Prerequisites
 
@@ -51,7 +52,23 @@ First, get a copy of this repo on your local machine by using the git clone comm
     server.error.include-message=always
 
   3. You can also configure other application-specific settings in the same file.
- 
+
+## Deployment
+ This application was deployed on render, follow these steps to deploy:
+ 1. Package your application in a jar file using
+    ```bash
+    mvn clean package
+ 2. Test the package by using the command:
+    ```bash
+    java -jar your-application.jar
+ 3. Add a docker file with the following commands:
+    ```bash
+      FROM eclipse-temurin:17-jdk-alpine
+      VOLUME /tmp
+      COPY target/*.jar app.jar
+      ENTRYPOINT ["java","-jar","/app.jar"]
+      EXPOSE 8080
+    
 ## Usage & Testing
 A Postman Document was included to show the various permissible requests.
 
@@ -121,23 +138,6 @@ Delete a Person by ID
     Endpoint: /api/{id}
   Response:
   HTTP Status Code: 204 No Content
-
-
-## Deployment
- This application was deployed on render, follow these steps to deploy:
- 1. Package your application in a jar file using
-    ```bash
-    mvn clean package
- 2. Test the package by using the command:
-    ```bash
-    java -jar your-application.jar
- 3. Add a docker file with the following commands:
-    ```bash
-      FROM eclipse-temurin:17-jdk-alpine
-      VOLUME /tmp
-      COPY target/*.jar app.jar
-      ENTRYPOINT ["java","-jar","/app.jar"]
-      EXPOSE 8080
 
 
 
