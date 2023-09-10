@@ -11,8 +11,6 @@ This is the source code pertaining to my submission of the stage 2 task for the 
   - [Endpoints](#endpoints)
 - [Testing](#testing)
 - [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Prerequisites
 
@@ -59,9 +57,13 @@ First, get a copy of this repo on your local machine by using the git clone comm
 A Postman Document was included to show the various permissible requests.
 
 ### Endpoints
+  ```
+  `GET /api/{id}: Retrieve details of a person by ID. [] TODO: add sample request
+  `POST /api: Create a new person. []
+  `PUT /api/{id}: Update details of an existing person. []
+  `DELETE /api/{id}: Remove a person.[]
 
-`GET /api/{id}: Retrieve details of a person by ID. [] TODO: add sample request
-`POST /api: Create a new person. []
-`PUT /api/{id}: Update details of an existing person. []
-`DELETE /api/{id}: Remove a person.[]
+## UML
+![Screenshot 2023-09-10 at 19 24 51](https://github.com/oresho/hng/assets/92453774/cff1d4f5-d43a-44e9-941d-c60ff2bc4327)
+
 
