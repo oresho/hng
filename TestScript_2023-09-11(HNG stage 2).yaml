@@ -1,0 +1,141 @@
+_type: export
+__export_format: 4
+__export_date: 2023-09-11T13:27:29.720Z
+__export_source: insomnia.desktop.app:v2023.5.8
+resources:
+  - _id: req_a713150ee5e44f31ba072aa6459c80d5
+    parentId: wrk_63bba7040878449b95d2701496716ffe
+    modified: 1694438396474
+    created: 1694367907807
+    url: https://hng-service2.onrender.com/api
+    name: Create New Person
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Oresho",
+        	"age": "21",
+        	"email": "oresho@yahoo.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694367907807
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_63bba7040878449b95d2701496716ffe
+    parentId: null
+    modified: 1694362443338
+    created: 1694362437833
+    name: Stage 2
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_6a132347c7cc4fc89808f3d5b281fd02
+    parentId: wrk_63bba7040878449b95d2701496716ffe
+    modified: 1694438758553
+    created: 1694370516005
+    url: https://hng-service2.onrender.com/api/2
+    name: Get Person by ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694231984960.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c6dd291147514c498a4be1f93554e032
+    parentId: wrk_63bba7040878449b95d2701496716ffe
+    modified: 1694438769438
+    created: 1694370540244
+    url: https://hng-service2.onrender.com/api/2
+    name: Delete Person by ID
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694164053592.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c2680adf28b74d5aa3cadce63d5bee4a
+    parentId: wrk_63bba7040878449b95d2701496716ffe
+    modified: 1694438796995
+    created: 1694370556473
+    url: https://hng-service2.onrender.com/api/3
+    name: Update Person by ID
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Oresho",
+        	"age": "16",
+        	"email": "oresho@yahoo.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694130087908.875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_e7e640d9379ef883b8a0524a4f80c2df316391fa
+    parentId: wrk_63bba7040878449b95d2701496716ffe
+    modified: 1694362437868
+    created: 1694362437868
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1694362437868
+    _type: environment
+  - _id: jar_e7e640d9379ef883b8a0524a4f80c2df316391fa
+    parentId: wrk_63bba7040878449b95d2701496716ffe
+    modified: 1694362437880
+    created: 1694362437880
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
