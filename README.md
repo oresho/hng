@@ -70,7 +70,7 @@ First, get a copy of this repo on your local machine by using the git clone comm
       EXPOSE 8080
     
 ## Usage & Testing
-A Postman Document was included to show the various permissible requests.
+A Postman Document was included to show the various permissible requests. [https://github.com/oresho/hng/blob/stage2/TestScript_2023-09-11(HNG%20stage%202).yaml]
 
 ### Endpoints
 ```bash
