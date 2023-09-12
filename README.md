@@ -70,11 +70,11 @@ First, get a copy of this repo on your local machine by using the git clone comm
       EXPOSE 8080
     
 ## Usage & Testing
-A Postman Document was included to show the various permissible requests.
+A Postman Document was included to show the various permissible requests. [https://github.com/oresho/hng/blob/stage2/TestScript_2023-09-11(HNG%20stage%202).yaml]
 
 ### Endpoints
 ```bash
-1. CREATE Endpoint
+1. CREATE Endpoint (https://hng-service2.onrender.com/api) 
 Create new Person
     Request:
       HTTP Method: POST
@@ -95,7 +95,7 @@ Create new Person
         "email": "oresho@yahoo.com"
       }
    
-3. READ Endpoint
+2. READ Endpoint (https://hng-service2.onrender.com/api/{id})
 Get Person details by ID
     Request:
       HTTP Method: GET
@@ -110,7 +110,7 @@ Get Person details by ID
         "email": "oresho@yahoo.com"
       }
 
-4. UPDATE Endpoint
+3. UPDATE Endpoint (https://hng-service2.onrender.com/api/{id})
 Update Person details by ID
     Request:
       HTTP Method: PUT
@@ -131,7 +131,7 @@ Update Person details by ID
         "email": "updatedemail@yahoo.com"
       }
    
-5. DELETE Endpoint
+4. DELETE Endpoint (https://hng-service2.onrender.com/api/{id})
 Delete a Person by ID
   Request:
     HTTP Method: DELETE
