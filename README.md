@@ -54,48 +54,31 @@ First, get a copy of this repo on your local machine by using the git clone comm
   3. You can also configure other application-specific settings in the same file.
 
 ## Deployment
- This application was deployed on render, follow these steps to deploy:
- 1. Package your application in a jar file using
-    ```bash
-    mvn clean package
- 2. Test the package by using the command:
-    ```bash
-    java -jar your-application.jar
- 3. Add a docker file with the following commands:
-    ```bash
-      FROM eclipse-temurin:17-jdk-alpine
-      VOLUME /tmp
-      COPY target/*.jar app.jar
-      ENTRYPOINT ["java","-jar","/app.jar"]
-      EXPOSE 8080
+ This application was deployed as an AWS ec2 instance.
     
 ## Usage & Testing
-A Postman Document was included to show the various permissible requests. [https://github.com/oresho/hng/blob/stage2/TestScript_2023-09-11(HNG%20stage%202).yaml]
+A Postman Document was included to show the various permissible requests. 
 
 ### Endpoints
 ```bash
-1. CREATE Endpoint (https://hng-service2.onrender.com/api) 
+1. CREATE Endpoint (http://54.226.149.236:8080/api/1)
 Create new Person
     Request:
       HTTP Method: POST
       Endpoint: /api
       Request Body:
        {
-        "name": "John Doe",
-        "age": 30
-        "email": "oresho@yahoo.com"
+        "name": "John Doe"
       }
     Response:
       HTTP Status Code: 201 Created
       Response Body:
        {
         "id": 1,
-        "name": "John Doe",
-        "age": 30
-        "email": "oresho@yahoo.com"
+        "name": "John Doe"
       }
    
-2. READ Endpoint (https://hng-service2.onrender.com/api/{id})
+2. READ Endpoint (http://54.226.149.236:8080/api/{id})
 Get Person details by ID
     Request:
       HTTP Method: GET
@@ -105,33 +88,27 @@ Get Person details by ID
       Response Body:
        {
         "id": 1,
-        "name": "John Doe",
-        "age": 30
-        "email": "oresho@yahoo.com"
+        "name": "John Doe"
       }
 
-3. UPDATE Endpoint (https://hng-service2.onrender.com/api/{id})
+3. UPDATE Endpoint (http://54.226.149.236:8080/api/{id})
 Update Person details by ID
     Request:
       HTTP Method: PUT
       Endpoint: /api/{id}
       Request Body:
        {
-        "name": "Updated Name",
-        "age": 35
-        "email": "updatedemail@yahoo.com"
+        "name": "Updated Name"
        }
     Response:
       HTTP Status Code: 200 OK
       Response Body:
        {
         "id": 1,
-        "name": "Updated Name",
-        "age": 35
-        "email": "updatedemail@yahoo.com"
+        "name": "Updated Name"
       }
    
-4. DELETE Endpoint (https://hng-service2.onrender.com/api/{id})
+4. DELETE Endpoint (http://54.226.149.236:8080/api/{id})
 Delete a Person by ID
   Request:
     HTTP Method: DELETE
