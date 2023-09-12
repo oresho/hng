@@ -20,10 +20,10 @@ public class Person {
     @NotBlank(message = "Name is required")
     @Pattern(regexp = "^[A-Za-z]+$", message = "Name should contain only letters")
     private String name;
-    @Min(value = 0, message = "Age must be at least 0")
-    @Max(value = 150, message = "Age must be less than or equal to 150")
-    private Integer age;
-    @ValidEmail(message = "Please enter a valid email, in the format (example@xyz.com)")
-    @NotBlank(message = "Email is required")
-    private String email;
+//    @Min(value = 0, message = "Age must be at least 0")
+//    @Max(value = 150, message = "Age must be less than or equal to 150")
+//    private Integer age;
+//    @ValidEmail(message = "Please enter a valid email, in the format (example@xyz.com)")
+//    @NotBlank(message = "Email is required")
+//    private String email;
 }

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.oreoluwa.HNG2.Hng2ApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.468 s - in com.oreoluwa.HNG2.Hng2ApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.153 s - in com.oreoluwa.HNG2.Hng2ApplicationTests
