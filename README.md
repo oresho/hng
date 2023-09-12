@@ -16,7 +16,7 @@ This is the source code pertaining to my submission of the stage 2 task for the 
 
 - Java 17 or higher
 - Spring boot 3
-- Render
+- AWS account
 - PostgreSQL 15 database
 - [Maven](https://maven.apache.org/) (for building and managing dependencies)
 
@@ -54,7 +54,7 @@ First, get a copy of this repo on your local machine by using the git clone comm
   3. You can also configure other application-specific settings in the same file.
 
 ## Deployment
- This application was deployed as an AWS ec2 instance.
+ This application was deployed as an AWS ec2 instance. Use this tutorial https://www.youtube.com/watch?v=_vOInY6SRVE
     
 ## Usage & Testing
 A Postman Document was included to show the various permissible requests. (https://github.com/oresho/hng/blob/stage2/HNG%20stage%202.postman_collection.json)
