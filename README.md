@@ -57,7 +57,8 @@ First, get a copy of this repo on your local machine by using the git clone comm
  This application was deployed as an AWS ec2 instance.
     
 ## Usage & Testing
-A Postman Document was included to show the various permissible requests. 
+A Postman Document was included to show the various permissible requests. (https://github.com/oresho/hng/blob/stage2/HNG%20stage%202.postman_collection.json)
+Please note that the "name" field is validated and will only accept letters as input.
 
 ### Endpoints
 ```bash
