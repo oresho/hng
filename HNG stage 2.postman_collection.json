@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "0d053da5-2b66-4dbb-a838-4d80a5df0054",
+		"name": "HNG stage 2",
+		"description": "Stage 2 submission for Incognegro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28605577"
+	},
+	"item": [
+		{
+			"name": "Create Person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Oresho\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.226.149.236:8080/api",
+				"description": "Create a new person resourse"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://54.226.149.236:8080/api/1",
+				"description": "Get person by Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Person",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ooooo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.226.149.236:8080/api/1",
+				"description": "Update Person's name attribute"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Person",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://54.226.149.236:8080/api/1",
+				"description": "Delete person by id"
+			},
+			"response": []
+		}
+	]
+}
